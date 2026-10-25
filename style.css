@@ -19,7 +19,7 @@ body {
   color: var(--font-color);
 }
 
-/* Navbar */
+/* Navbar-steven*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -52,5 +52,17 @@ body {
   transition: 0.3s;
 }
 
-/* Menu Section */
-.
+/* Hero Section-steven*/
+
+/*About Section-nando*/
+.about,
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+/*Menu Section-nando*/
+/*Contact Section-dev.tizar*/
