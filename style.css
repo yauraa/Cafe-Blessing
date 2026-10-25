@@ -1,5 +1,53 @@
 :root{
     --primary-color: #ffffff;
     --bg-color: #000000;
-    --font-color: #D90F9E
+    --font-color: #D90F9E;
+}
+
+*{
+    margin 0;
+    padding 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--font-color);
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color: var(--font-color);
+}
+
+.navbar .navbar-nav a{
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-left: 2rem;
+    transition: 0.3s;
 }
