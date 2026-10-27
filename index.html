@@ -1,114 +1,263 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe KATTO</title>
+=======
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cafe KATTO — Maid Cafe</title>
+  <style>
+    :root {
+      --cream: #fdf9f3;
+      --brown: #784738;
+      --pink: #edb7c9;
+      --ink: #4d3027;
+    }
+>>>>>>> 64b0ddad2d485e3324c9fe6bdded0b5579378b98
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">"
-      rel="stylesheet"
-    />
+    * { margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none; }
 
-    <!-- Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+    html { scroll-behavior: smooth;
+    scroll-padding-top: 110px; }
 
-    <!-- My Styles -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Navbar Start -->
-     <nav class="navbar">
-      <a href="#" class="navbar-logo">Cafe<span>KATTO</span></a>
-      <div class="navbar-nav">
-        <a href="#">Home</a>
-        <a href="#About">Tentang</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Kontak</a>
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      position: sticky;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      padding: 20px 4%;
+      border-bottom: 1px solid #e8d9cf;
+      top: 0;
+      z-index: 9999;
+      background-color: whitesmoke;
+    }
+
+    .logo {
+      font-size: clamp(32px, 5vw, 64px);
+      font-weight: 800;
+      letter-spacing: -0.07em;
+      color: var(--brown);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .logo span { color: #d56e8e; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 14px 22px;
+    }
+
+    nav a {
+      color: var(--brown);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+    }
+
+    nav a:hover { color: #d56e8e; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 36px;
+      padding: 70px 8%;
+      background: #f6e8e0;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      color: #a36c77;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      color: var(--brown);
+      font-family: Georgia, serif;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 66px);
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+
+    .hero p 
+    { 
+    line-height: 1.8;
+    font-family: "Yu Gothic",sans-serif;
+    font-size: 1rem;
+  }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      margin-top: 14px;
+      background: var(--brown);
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+
+    .illustration {
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #e5c9c5;
+      border-radius: 48% 48% 12px 12px;
+      background: #efd0d8;
+      font-size: clamp(70px, 12vw, 140px);
+    }
+
+    section.content {
+      padding: 55px 8%;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      padding: 24px 16px;
+      border: 1px solid #e9d9ce;
+      background: #fffdf9;
+    }
+
+    .card .icon { font-size: 42px; }
+
+    .card h3 { margin-bottom: 8px; }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 28px 20px;
+      background: var(--brown);
+      color: white;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      nav { justify-content: center; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 42px 6%;
+        text-align: center;
+      }
+
+      .illustration { min-height: 220px; }
+
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#">Cafe<span>KATTO ♡</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#news">NEWS</a>
+      <a href="#menu">MENU</a>
+      <a href="#story">STORY</a>
+      <a href="#staff">STAFF & CAST</a>
+      <a href="#visit">VISIT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="story">
+      <div>
+        <div class="eyebrow">Welcome to our cafe</div>
+        <h1>Welcome Home,<br>Master & Princess!</h1>
+        <p>A little sweetness, a warm welcome, and a special moment just for you.</p>
+        <a class="button" href="#menu">EXPLORE OUR MENU ↗</a>
       </div>
-
-      <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-      </div>
-     </nav>
-    <!-- Navbar end -->
-    <!-- ===== START HERO SECTION HALAMAN 1 ===== --> 
-    <!-- ===== Tolong buat hero section disini ya steven ===== -->  
-    <!-- ===== END HERO SECTION HALAMAN 1 ===== -->  
-
-    <!-- ===== STARTABOUT SECTION HALAMAN 2 ===== -->
-    <!-- ===== Section About ===== -->
-    <section id="about" class="about">
-      <div class="about-container">
-        <div class="about-text">
-          <h2>Tentang Cafe KATTO</h2>
-          <p>
-            Cafe KATTO adalah sebuah kafe hiburan di mana pelayan (disebut
-            "maid") mengenakan kostum pelayan klasik bergaya Prancis—rok puff,
-            apron putih, dan bando. Pengunjung akan diperlakukan seperti "tuan"
-            atau "nyonya" (goshujin-sama / ojou-sama) dalam format roleplay
-            ringan yang sopan.
-          </p>
-        </div>
+      <div class="illustration" role="img" aria-label="Decorative café illustration">
+        ☕ ♡
       </div>
     </section>
-    <!-- ===== END ABOUTSECTION HALAMAN 2 ===== -->
 
-    <!-- ===== MENU SECTION HALAMAN 3 ===== -->
-    <section id="menu-makanan" class="menu-makanan">
-      <h2>Menu Makanan</h2>
-
-      <h3>Daftar Menu</h3>
-      <div class="menu-grid">
-        <div class="menu-card">
-          <h4>Katsu Curry</h4>
-          <p>Katsu curry dengan daging sapi yang lembut</p>
-          <span class="menu-harga"> Rp. 20.000</span>
-        </div>
-        <div class="menu-card">
-          <h4>Omurice</h4>
-          <p>Nasi goreng dengan telur dadar dan daging</p>
-          <span class="menu-harga"> Rp. 20.000</span>
-        </div>
-        <div class="menu-card">
-          <h4>pancakes</h4>
-          <p>Pancakes lezat dengan sirup dan buah-buahan</p>
-          <span class="menu-harga"> Rp. 20.000</span>
-        </div>
-        <div class="menu-card">
-          <h4>Humburger Steak Nibba</h4>
-          <p>Humburger steak dengan daging sapi yang lembut</p>
-          <span class="menu-harga"> Rp. 99.000</span>
-        </div>
-        <div class="menu-card">
-          <h4>matcha cake and match latte</h4>
-          <p>Matcha cake dan matcha latte yang lezat</p>
-          <span class="menu-harga"> Rp. 30.000</span>
-        </div>
-        <div class="menu-card">
-          <h4>chocolate parfait</h4>
-          <p>Chocolate parfait dengan krim dan buah-buahan</p>
-          <span class="menu-harga"> Rp. 45.000</span>
-        </div>
-        <div class="menu-card">
-          <h4>princess sundae</h4>
-          <p>Princess sundae dengan krim dan buah-buahan</p>
-          <span class="menu-harga"> Rp. 45.000</span>
-        </div>
-      </div>
-
+    <section class="content" id="news">
+      <div class="eyebrow">Fresh from our café</div>
+      <h2>Latest News</h2>
+      <p>New seasonal treats and lovely surprises await you.</p>
     </section>
-    <!-- ===== END MENU SECTION HALAMAN 3 ===== -->
-    <script>
-      feather.replace();
-    </script>
-  </body>
+
+    <section class="content" id="menu">
+      <div class="eyebrow">Made with love</div>
+      <h2>Today's Favorites</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🍳</div>
+          <h3>Lovely Omurice</h3>
+          <p>Our comforting signature dish, served with love.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🍓</div>
+          <h3>Strawberry Dream</h3>
+          <p>A sweet and creamy treat for a lovely afternoon.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🍵</div>
+          <h3>Matcha Moments</h3>
+          <p>A gentle matcha drink to brighten your day.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content" id="staff">
+      <div class="eyebrow">Nice to meet you</div>
+      <h2>Meet Our Maids</h2>
+      <p>Every member of our café has a little story to tell.</p>
+    </section>
+
+    <section class="content" id="visit">
+      <div class="eyebrow">We are waiting for you</div>
+      <h2>Come Visit Us ♡</h2>
+      <p>Discover your new favorite little place.</p>
+      <a class="button" href="mailto:hello@example.com">CONTACT OUR CAFÉ</a>
+    </section>
+  </main>
+
+  <footer>
+    MAISON MAID CAFÉ ♡ · MADE WITH LOVE
+  </footer>
+</body>
 </html>
