@@ -1,263 +1,447 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe KATTO</title>
-=======
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cafe KATTO — Maid Cafe</title>
-  <style>
-    :root {
-      --cream: #fdf9f3;
-      --brown: #784738;
-      --pink: #edb7c9;
-      --ink: #4d3027;
-    }
->>>>>>> 64b0ddad2d485e3324c9fe6bdded0b5579378b98
-
-    * { margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none; }
-
-    html { scroll-behavior: smooth;
-    scroll-padding-top: 110px; }
-
-    body {
-      margin: 0;
-      background: var(--cream);
-      color: var(--ink);
-      font-family: "Helvetica Neue", Arial, sans-serif;
-    }
-
-    header {
-      display: flex;
-      position: sticky;
-      align-items: center;
-      justify-content: space-between;
-      gap: 28px;
-      padding: 20px 4%;
-      border-bottom: 1px solid #e8d9cf;
-      top: 0;
-      z-index: 9999;
-      background-color: whitesmoke;
-    }
-
-    .logo {
-      font-size: clamp(32px, 5vw, 64px);
-      font-weight: 800;
-      letter-spacing: -0.07em;
-      color: var(--brown);
-      text-decoration: none;
-      white-space: nowrap;
-    }
-
-    .logo span { color: #d56e8e; }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 14px 22px;
-    }
-
-    nav a {
-      color: var(--brown);
-      text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 0.18em;
-    }
-
-    nav a:hover { color: #d56e8e; }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 36px;
-      padding: 70px 8%;
-      background: #f6e8e0;
-    }
-
-    .eyebrow {
-      font-size: 11px;
-      letter-spacing: 0.22em;
-      color: #a36c77;
-      text-transform: uppercase;
-    }
-
-    h1, h2, h3 {
-      color: var(--brown);
-      font-family: Georgia, serif;
-    }
-
-    h1 {
-      font-size: clamp(38px, 5vw, 66px);
-      line-height: 1.1;
-      margin: 20px 0;
-    }
-
-    .hero p 
-    { 
-    line-height: 1.8;
-    font-family: "Yu Gothic",sans-serif;
-    font-size: 1rem;
-  }
-
-    .button {
-      display: inline-block;
-      padding: 14px 22px;
-      margin-top: 14px;
-      background: var(--brown);
-      color: white;
-      text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 0.1em;
-    }
-
-    .illustration {
-      min-height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid #e5c9c5;
-      border-radius: 48% 48% 12px 12px;
-      background: #efd0d8;
-      font-size: clamp(70px, 12vw, 140px);
-    }
-
-    section.content {
-      padding: 55px 8%;
-      text-align: center;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-      margin-top: 30px;
-    }
-
-    .card {
-      padding: 24px 16px;
-      border: 1px solid #e9d9ce;
-      background: #fffdf9;
-    }
-
-    .card .icon { font-size: 42px; }
-
-    .card h3 { margin-bottom: 8px; }
-
-    .card p {
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    footer {
-      padding: 28px 20px;
-      background: var(--brown);
-      color: white;
-      text-align: center;
-      font-size: 12px;
-      letter-spacing: 0.08em;
-    }
-
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        gap: 18px;
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cafe KATTO — Maid Cafe</title>
+    <style>
+      :root {
+        --cream: #fdf9f3;
+        --brown: #784738;
+        --pink: #edb7c9;
+        --ink: #4d3027;
       }
 
-      nav { justify-content: center; }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 110px;
+      }
+
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      header {
+        display: flex;
+        position: sticky;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+        padding: 20px 4%;
+        border-bottom: 1px solid #e8d9cf;
+        top: 0;
+        z-index: 9999;
+        background-color: whitesmoke;
+      }
+
+      .logo {
+        font-size: clamp(32px, 5vw, 64px);
+        font-weight: 800;
+        letter-spacing: -0.07em;
+        color: var(--brown);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .logo span {
+        color: #d56e8e;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 14px 22px;
+      }
+
+      nav a {
+        color: var(--brown);
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+      }
+
+      nav a:hover {
+        color: #d56e8e;
+      }
 
       .hero {
-        grid-template-columns: 1fr;
-        padding: 42px 6%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 36px;
+        padding: 70px 8%;
+        background: #f6e8e0;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.22em;
+        color: #a36c77;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: var(--brown);
+        font-family: Georgia, serif;
+      }
+
+      h1 {
+        font-size: clamp(38px, 5vw, 66px);
+        line-height: 1.1;
+        margin: 20px 0;
+      }
+
+      .hero p {
+        line-height: 1.8;
+        font-family: "Yu Gothic", sans-serif;
+        font-size: 1rem;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 14px 22px;
+        margin-top: 14px;
+        background: var(--brown);
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+      }
+
+      .illustration {
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e5c9c5;
+        border-radius: 48% 48% 12px 12px;
+        background: #efd0d8;
+        font-size: clamp(70px, 12vw, 140px);
+      }
+
+      section.content {
+        padding: 55px 8%;
         text-align: center;
       }
 
-      .illustration { min-height: 220px; }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+        margin-top: 30px;
+      }
 
-      .cards { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <a class="logo" href="#">Cafe<span>KATTO ♡</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#news">NEWS</a>
-      <a href="#menu">MENU</a>
-      <a href="#story">STORY</a>
-      <a href="#staff">STAFF & CAST</a>
-      <a href="#visit">VISIT</a>
-    </nav>
-  </header>
+      .card {
+        padding: 24px 16px;
+        border: 1px solid #e9d9ce;
+        background: #fffdf9;
+      }
 
-  <main>
-    <section class="hero" id="story">
-      <div>
-        <div class="eyebrow">Welcome to our cafe</div>
-        <h1>Welcome Home,<br>Master & Princess!</h1>
-        <p>A little sweetness, a warm welcome, and a special moment just for you.</p>
-        <a class="button" href="#menu">EXPLORE OUR MENU ↗</a>
-      </div>
-      <div class="illustration" role="img" aria-label="Decorative café illustration">
-        ☕ ♡
-      </div>
-    </section>
+      .card .icon {
+        font-size: 42px;
+      }
 
-    <section class="content" id="news">
-      <div class="eyebrow">Fresh from our café</div>
-      <h2>Latest News</h2>
-      <p>New seasonal treats and lovely surprises await you.</p>
-    </section>
+      .card h3 {
+        margin-bottom: 8px;
+      }
 
-    <section class="content" id="menu">
-      <div class="eyebrow">Made with love</div>
-      <h2>Today's Favorites</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="icon">🍳</div>
-          <h3>Lovely Omurice</h3>
-          <p>Our comforting signature dish, served with love.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🍓</div>
-          <h3>Strawberry Dream</h3>
-          <p>A sweet and creamy treat for a lovely afternoon.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🍵</div>
-          <h3>Matcha Moments</h3>
-          <p>A gentle matcha drink to brighten your day.</p>
-        </article>
-      </div>
-    </section>
+      .card p {
+        font-size: 14px;
+        line-height: 1.7;
+      }
 
-    <section class="content" id="staff">
-      <div class="eyebrow">Nice to meet you</div>
-      <h2>Meet Our Maids</h2>
-      <p>Every member of our café has a little story to tell.</p>
-    </section>
+      /* ===== Menu Section ===== */
+      #menu {
+        --accent: #f26b3a;
+        background: #f4f4f7;
+      }
 
-    <section class="content" id="visit">
-      <div class="eyebrow">We are waiting for you</div>
-      <h2>Come Visit Us ♡</h2>
-      <p>Discover your new favorite little place.</p>
-      <a class="button" href="mailto:hello@example.com">CONTACT OUR CAFÉ</a>
-    </section>
-  </main>
+      .menu-tabs {
+        display: flex;
+        gap: 26px;
+        max-width: 1100px;
+        margin: 28px auto 26px;
+        border-bottom: 1px solid #e0e0e6;
+      }
 
-  <footer>
-    MAISON MAID CAFÉ ♡ · MADE WITH LOVE
-  </footer>
-</body>
+      .menu-tab {
+        margin-bottom: -1px;
+        padding: 0 2px 10px;
+        border: 0;
+        border-bottom: 2px solid transparent;
+        background: none;
+        color: #9a9aa6;
+        font: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .menu-tab:hover {
+        color: #222;
+      }
+
+      .menu-tab.active {
+        border-bottom-color: #222;
+        color: #222;
+      }
+
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 22px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .menu-item {
+        display: flex;
+        flex-direction: column;
+        padding: 14px;
+        border: 1.5px solid transparent;
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        text-align: left;
+        transition: 0.3s;
+      }
+
+      .menu-item:hover {
+        transform: translateY(-6px);
+        border-color: var(--accent);
+        box-shadow: 0 14px 30px rgba(242, 107, 58, 0.18);
+      }
+
+      .menu-item-img {
+        position: relative;
+        height: 190px;
+        margin-bottom: 14px;
+        border-radius: 14px;
+        background: #eeeef2;
+        overflow: hidden;
+      }
+
+      .menu-item-img img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s;
+      }
+
+      .menu-item:hover .menu-item-img img {
+        transform: scale(1.07);
+      }
+
+      .menu-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        border-radius: 7px;
+        background: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        font-size: 14px;
+      }
+
+      #menu .menu-name {
+        margin-bottom: 4px;
+        color: #222;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      .menu-desc {
+        color: #8a8a96;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+      /* ===== End Menu Section ===== */
+
+      footer {
+        padding: 28px 20px;
+        background: var(--brown);
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+      }
+
+      @media (max-width: 700px) {
+        header {
+          flex-direction: column;
+          gap: 18px;
+        }
+
+        nav {
+          justify-content: center;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+          padding: 42px 6%;
+          text-align: center;
+        }
+
+        .illustration {
+          min-height: 220px;
+        }
+
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#">Cafe<span>KATTO ♡</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#news">NEWS</a>
+        <a href="#menu">MENU</a>
+        <a href="#story">STORY</a>
+        <a href="#staff">STAFF & CAST</a>
+        <a href="#visit">VISIT</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="story">
+        <div>
+          <div class="eyebrow">Welcome to our cafe</div>
+          <h1>Welcome Home,<br />Master & Princess!</h1>
+          <p>
+            A little sweetness, a warm welcome, and a special moment just for
+            you.
+          </p>
+          <a class="button" href="#menu">EXPLORE OUR MENU ↗</a>
+        </div>
+        <div
+          class="illustration"
+          role="img"
+          aria-label="Decorative café illustration"
+        >
+          ☕ ♡
+        </div>
+      </section>
+
+      <section class="content" id="news">
+        <div class="eyebrow">Fresh from our café</div>
+        <h2>Latest News</h2>
+        <p>New seasonal treats and lovely surprises await you.</p>
+      </section>
+
+      <!-- menu section start -->
+      <section class="content" id="menu">
+        <div class="eyebrow">Made with love</div>
+        <h2>Today's Favorites</h2>
+
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <span class="menu-badge">🍽️</span>
+              <img src="img/omurice.jpg" alt="Omurice" />
+            </div>
+            <h3 class="menu-name">Lovely Omurice</h3>
+            <p class="menu-desc">
+              Our comforting signature dish, served with love.
+            </p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <span class="menu-badge">🍽️</span>
+              <img src="img/katsu-curry.jpg" alt="Katsu Curry" />
+            </div>
+            <h3 class="menu-name">Katsu Curry</h3>
+            <p class="menu-desc">
+              Crispy chicken katsu with warm rice and rich curry sauce.
+            </p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <span class="menu-badge">🍽️</span>
+              <img src="img/hamburg-steak.png" alt="Bear Hamburg Steak" />
+            </div>
+            <h3 class="menu-name">Bear Hamburg Steak</h3>
+            <p class="menu-desc">
+              A cute bear-shaped hamburg steak with colorful veggies.
+            </p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <span class="menu-badge">🍰</span>
+              <img src="img/brownie-parfait.jpg" alt="Brownie Parfait" />
+            </div>
+            <h3 class="menu-name">Brownie Parfait</h3>
+            <p class="menu-desc">
+              Chocolate brownies with vanilla ice cream and cream.
+            </p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <span class="menu-badge">🍰</span>
+              <img src="img/bunny-parfait.jpg" alt="Bunny Parfait" />
+            </div>
+            <h3 class="menu-name">Bunny Parfait</h3>
+            <p class="menu-desc">
+              A sweet pink parfait decorated with a bunny and hearts.
+            </p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <span class="menu-badge">🍰</span>
+              <img src="img/pancakes.jpg" alt="Fluffy Pancakes" />
+            </div>
+            <h3 class="menu-name">Fluffy Pancakes</h3>
+            <p class="menu-desc">
+              Fluffy pancakes with yogurt, fresh berries, and honey.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- menu section end -->
+
+      <section class="content" id="staff">
+        <div class="eyebrow">Nice to meet you</div>
+        <h2>Meet Our Maids</h2>
+        <p>Every member of our café has a little story to tell.</p>
+      </section>
+
+      <section class="content" id="visit">
+        <div class="eyebrow">We are waiting for you</div>
+        <h2>Come Visit Us ♡</h2>
+        <p>Discover your new favorite little place.</p>
+        <a class="button" href="mailto:hello@example.com">CONTACT OUR CAFÉ</a>
+      </section>
+    </main>
+
+    <footer>MAISON MAID CAFÉ ♡ · MADE WITH LOVE</footer>
+  </body>
 </html>
