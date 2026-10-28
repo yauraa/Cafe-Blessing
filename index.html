@@ -23,7 +23,7 @@
 
       html {
         scroll-behavior: smooth;
-        scroll-padding-top: 110px;
+        scroll-padding-top: 80px;
       }
 
       body {
@@ -91,6 +91,7 @@
         letter-spacing: 0.22em;
         color: #a36c77;
         text-transform: uppercase;
+        margin-bottom: 8px;
       }
 
       h1,
@@ -138,6 +139,15 @@
         padding: 55px 8%;
         text-align: center;
       }
+      section.content.h2{
+        margin-bottom: 14px;
+      }
+      section.content.button{
+        margin-top: 24px;
+      }
+      section.content p{
+        line-height: 3;
+      }
 
       .cards {
         display: grid;
@@ -169,6 +179,16 @@
       #menu {
         --accent: #f26b3a;
         background: #f4f4f7;
+        padding-top: 20px;
+      }
+      #menu h2{
+        margin-bottom: 24px;
+        margin-top: 20px;
+      }
+      #menu h3{
+        --accent: #f26b3a;
+        background: #f4f4f7;
+        padding-top: 20px;
       }
 
       .menu-tabs {
@@ -240,8 +260,9 @@
       .menu-item-img img {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 190px;
         object-fit: cover;
+        object-position: center;
         transition: transform 0.5s;
       }
 
@@ -319,7 +340,6 @@
     <header>
       <a class="logo" href="#">Cafe<span>KATTO ♡</span></a>
       <nav aria-label="Main navigation">
-        <a href="#news">NEWS</a>
         <a href="#menu">MENU</a>
         <a href="#story">STORY</a>
         <a href="#staff">STAFF & CAST</a>
@@ -347,12 +367,6 @@
         </div>
       </section>
 
-      <section class="content" id="news">
-        <div class="eyebrow">Fresh from our café</div>
-        <h2>Latest News</h2>
-        <p>New seasonal treats and lovely surprises await you.</p>
-      </section>
-
       <!-- menu section start -->
       <section class="content" id="menu">
         <div class="eyebrow">Made with love</div>
@@ -365,9 +379,9 @@
               <img src="img/omurice.jpg" alt="Omurice" />
             </div>
             <h3 class="menu-name">Lovely Omurice</h3>
-            <p class="menu-desc">
+            <p2 class="menu-desc">
               Our comforting signature dish, served with love.
-            </p>
+            </p2>
           </article>
 
           <article class="menu-item">
@@ -376,9 +390,9 @@
               <img src="img/katsu-curry.jpg" alt="Katsu Curry" />
             </div>
             <h3 class="menu-name">Katsu Curry</h3>
-            <p class="menu-desc">
+            <p2 class="menu-desc">
               Crispy chicken katsu with warm rice and rich curry sauce.
-            </p>
+            </p2>
           </article>
 
           <article class="menu-item">
@@ -387,9 +401,9 @@
               <img src="img/hamburg-steak.png" alt="Bear Hamburg Steak" />
             </div>
             <h3 class="menu-name">Bear Hamburg Steak</h3>
-            <p class="menu-desc">
+            <p2 class="menu-desc">
               A cute bear-shaped hamburg steak with colorful veggies.
-            </p>
+            </p2>
           </article>
 
           <article class="menu-item">
@@ -398,9 +412,9 @@
               <img src="img/brownie-parfait.jpg" alt="Brownie Parfait" />
             </div>
             <h3 class="menu-name">Brownie Parfait</h3>
-            <p class="menu-desc">
+            <p2 class="menu-desc">
               Chocolate brownies with vanilla ice cream and cream.
-            </p>
+            </p2>
           </article>
 
           <article class="menu-item">
@@ -409,9 +423,9 @@
               <img src="img/bunny-parfait.jpg" alt="Bunny Parfait" />
             </div>
             <h3 class="menu-name">Bunny Parfait</h3>
-            <p class="menu-desc">
+            <p2 class="menu-desc">
               A sweet pink parfait decorated with a bunny and hearts.
-            </p>
+            </p2>
           </article>
 
           <article class="menu-item">
@@ -420,14 +434,18 @@
               <img src="img/pancakes.jpg" alt="Fluffy Pancakes" />
             </div>
             <h3 class="menu-name">Fluffy Pancakes</h3>
-            <p class="menu-desc">
+            <p2 class="menu-desc">
               Fluffy pancakes with yogurt, fresh berries, and honey.
-            </p>
+            </p2>
           </article>
         </div>
       </section>
       <!-- menu section end -->
-
+       <article class="datadiri">
+        <div class="data">
+          
+        </div>
+       </article>
       <section class="content" id="staff">
         <div class="eyebrow">Nice to meet you</div>
         <h2>Meet Our Maids</h2>
@@ -436,12 +454,12 @@
 
       <section class="content" id="visit">
         <div class="eyebrow">We are waiting for you</div>
-        <h2>Come Visit Us ♡</h2>
+        <h2>Come Visit Us </h2>
         <p>Discover your new favorite little place.</p>
         <a class="button" href="mailto:hello@example.com">CONTACT OUR CAFÉ</a>
       </section>
     </main>
 
-    <footer>MAISON MAID CAFÉ ♡ · MADE WITH LOVE</footer>
+    <footer>KATTO MAID CAFE ♡ · MADE WITH LOVE</footer>
   </body>
 </html>
