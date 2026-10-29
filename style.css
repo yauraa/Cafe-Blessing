@@ -600,6 +600,21 @@ footer {
   letter-spacing: 0.08em;
 }
 
+.footer-links { margin-top: 10px; }
+
+.footer-links a {
+  margin: 0 6px;
+  color: white;
+}
+
+.footer-links a:hover { color: var(--pink); }
+
+.footer-small {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+
 /* ===================================================
    Responsive Breakpoints
    =================================================== */
