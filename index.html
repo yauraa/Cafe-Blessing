@@ -42,72 +42,167 @@
         <div class="eyebrow">Made with love</div>
         <h2>Today's Favorites</h2>
 
-        <div class="menu-grid">
-          <article class="menu-item">
-            <div class="menu-item-img">
-              <span class="menu-badge">🍽️</span>
-              <img src="img/omurice.jpg" alt="Omurice" />
-            </div>
-            <h3 class="menu-name">Lovely Omurice</h3>
-            <p2 class="menu-desc">
-              Our comforting signature dish, served with love.
-            </p2>
-          </article>
+        <div class="menu-tabs">
+          <button type="button" class="menu-tab active" data-tab="all">All</button>
+          <button type="button" class="menu-tab" data-tab="food">Food</button>
+          <button type="button" class="menu-tab" data-tab="dessert">Dessert</button>
+          <button type="button" class="menu-tab" data-tab="coffee">Coffee</button>
+        </div>
 
-          <article class="menu-item">
-            <div class="menu-item-img">
-              <span class="menu-badge">🍽️</span>
-              <img src="img/katsu-curry.jpg" alt="Katsu Curry" />
-            </div>
-            <h3 class="menu-name">Katsu Curry</h3>
-            <p2 class="menu-desc">
-              Crispy chicken katsu with warm rice and rich curry sauce.
-            </p2>
-          </article>
+        <!-- Category: Food -->
+        <div class="menu-category-group" data-category="food">
+          <div class="category-header">
+            <span class="category-line"></span>
+            <span class="category-icon">🍽️</span>
+            <h3 class="category-title">Food & Mains</h3>
+            <span class="category-line"></span>
+          </div>
 
-          <article class="menu-item">
-            <div class="menu-item-img">
-              <span class="menu-badge">🍽️</span>
-              <img src="img/hamburg-steak.png" alt="Bear Hamburg Steak" />
-            </div>
-            <h3 class="menu-name">Bear Hamburg Steak</h3>
-            <p2 class="menu-desc">
-              A cute bear-shaped hamburg steak with colorful veggies.
-            </p2>
-          </article>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-item-img">
+                <span class="menu-badge">🍽️</span>
+                <img src="img/omurice.jpg" alt="Lovely Omurice" />
+              </div>
+              <h3 class="menu-name">Lovely Omurice</h3>
+              <p class="menu-desc">
+                Our comforting signature dish, served with love.
+              </p>
+              <span class="menu-price">Rp 35.000</span>
+            </article>
 
-          <article class="menu-item">
-            <div class="menu-item-img">
-              <span class="menu-badge">🍰</span>
-              <img src="img/brownie-parfait.jpg" alt="Brownie Parfait" />
-            </div>
-            <h3 class="menu-name">Brownie Parfait</h3>
-            <p2 class="menu-desc">
-              Chocolate brownies with vanilla ice cream and cream.
-            </p2>
-          </article>
+            <article class="menu-item">
+              <div class="menu-item-img">
+                <span class="menu-badge">🍽️</span>
+                <img src="img/katsu-curry.jpg" alt="Katsu Curry" />
+              </div>
+              <h3 class="menu-name">Katsu Curry</h3>
+              <p class="menu-desc">
+                Crispy chicken katsu with warm rice and rich curry sauce.
+              </p>
+              <span class="menu-price">Rp 38.000</span>
+            </article>
 
-          <article class="menu-item">
-            <div class="menu-item-img">
-              <span class="menu-badge">🍰</span>
-              <img src="img/bunny-parfait.jpg" alt="Bunny Parfait" />
-            </div>
-            <h3 class="menu-name">Bunny Parfait</h3>
-            <p2 class="menu-desc">
-              A sweet pink parfait decorated with a bunny and hearts.
-            </p2>
-          </article>
+            <article class="menu-item">
+              <div class="menu-item-img">
+                <span class="menu-badge">🍽️</span>
+                <img src="img/hamburg-steak.png" alt="Bear Hamburg Steak" />
+              </div>
+              <h3 class="menu-name">Bear Hamburg Steak</h3>
+              <p class="menu-desc">
+                A cute bear-shaped hamburg steak with colorful veggies.
+              </p>
+              <span class="menu-price">Rp 42.000</span>
+            </article>
+          </div>
+        </div>
 
-          <article class="menu-item">
-            <div class="menu-item-img">
-              <span class="menu-badge">🍰</span>
-              <img src="img/pancakes.jpg" alt="Fluffy Pancakes" />
-            </div>
-            <h3 class="menu-name">Fluffy Pancakes</h3>
-            <p2 class="menu-desc">
-              Fluffy pancakes with yogurt, fresh berries, and honey.
-            </p2>
-          </article>
+        <!-- Category: Dessert -->
+        <div class="menu-category-group" data-category="dessert">
+          <div class="category-header">
+            <span class="category-line"></span>
+            <span class="category-icon">🍰</span>
+            <h3 class="category-title">Sweet Desserts</h3>
+            <span class="category-line"></span>
+          </div>
+
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-item-img">
+                <span class="menu-badge">🍰</span>
+                <img src="img/brownie-parfait.jpg" alt="Brownie Parfait" />
+              </div>
+              <h3 class="menu-name">Brownie Parfait</h3>
+              <p class="menu-desc">
+                Chocolate brownies with vanilla ice cream and cream.
+              </p>
+              <span class="menu-price">Rp 28.000</span>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-item-img">
+                <span class="menu-badge">🍰</span>
+                <img src="img/bunny-parfait.jpg" alt="Bunny Parfait" />
+              </div>
+              <h3 class="menu-name">Bunny Parfait</h3>
+              <p class="menu-desc">
+                A sweet pink parfait decorated with a bunny and hearts.
+              </p>
+              <span class="menu-price">Rp 30.000</span>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-item-img">
+                <span class="menu-badge">🍰</span>
+                <img src="img/pancakes.jpg" alt="Fluffy Pancakes" />
+              </div>
+              <h3 class="menu-name">Fluffy Pancakes</h3>
+              <p class="menu-desc">
+                Fluffy pancakes with yogurt, fresh berries, and honey.
+              </p>
+              <span class="menu-price">Rp 28.000</span>
+            </article>
+          </div>
+        </div>
+
+        <!-- Category: Coffee -->
+        <div class="menu-category-group" data-category="coffee">
+          <div class="category-header">
+            <span class="category-line"></span>
+            <span class="category-icon">☕</span>
+            <h3 class="category-title">Specialty Coffee</h3>
+            <span class="category-line"></span>
+          </div>
+
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-item-img">
+                <span class="menu-badge">☕</span>
+                <img src="img/latte.jpg" alt="Katto Neko Latte" />
+              </div>
+              <h3 class="menu-name">Katto Neko Latte</h3>
+              <p class="menu-desc">
+                Smooth espresso and steamed milk with cute cat latte art.
+              </p>
+              <span class="menu-price">Rp 26.000</span>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-item-img">
+                <span class="menu-badge">☕</span>
+                <img src="img/caramel-macchiato.jpg" alt="Caramel Macchiato" />
+              </div>
+              <h3 class="menu-name">Caramel Macchiato</h3>
+              <p class="menu-desc">
+                Espresso layered with creamy milk and rich caramel drizzle.
+              </p>
+              <span class="menu-price">Rp 28.000</span>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-item-img">
+                <span class="menu-badge">☕</span>
+                <img src="img/mocha.jpg" alt="Sweet Strawberry Mocha" />
+              </div>
+              <h3 class="menu-name">Sweet Strawberry Mocha</h3>
+              <p class="menu-desc">
+                Rich espresso blended with chocolate and strawberry essence.
+              </p>
+              <span class="menu-price">Rp 30.000</span>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-item-img">
+                <span class="menu-badge">☕</span>
+                <img src="img/cold-brew.jpg" alt="Cold Brew Magic" />
+              </div>
+              <h3 class="menu-name">Cold Brew Magic</h3>
+              <p class="menu-desc">
+                Refreshing slow-steeped cold brew served chilled over ice.
+              </p>
+              <span class="menu-price">Rp 24.000</span>
+            </article>
+          </div>
         </div>
       </section>
       <!-- menu section end -->
@@ -116,46 +211,45 @@
         <div class="eyebrow">Nice to meet you</div>
         <h2>Meet Our Maids</h2>
         <p>Every member of our café has a little story to tell.</p>
+
+        <div class="staff-grid">
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <span class="menu-badge">♡</span>
+              <img src="img/stipen.png" alt="Nama 1" />
+            </div>
+            <h3 class="menu-name">Steven Andreas Salim.</h3>
+            <p class="menu-desc">H1H026050</p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <span class="menu-badge">♡</span>
+              <img src="img/ambando.png" alt="Nama 2" />
+            </div>
+            <h3 class="menu-name">Rayhan Abigail F. Y.</h3>
+            <p class="menu-desc">H1H026064</p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <span class="menu-badge">♡</span>
+              <img src="img/dev.png" alt="Nama 3" />
+            </div>
+            <h3 class="menu-name">Dev Muhamad Tizar.</h3>
+            <p class="menu-desc">H1H026039</p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <span class="menu-badge">♡</span>
+              <img src="img/baruna.png" alt="Nama 4" />
+            </div>
+            <h3 class="menu-name">Muhammad Baruna S.</h3>
+            <p class="menu-desc">H1H026046</p>
+          </article>
+        </div>
       </section>
-
-      <div class="staff-grid">
-    <article class="menu-item">
-      <div class="menu-item-img">
-        <span class="menu-badge">♡</span>
-        <img src="img/stipen.png" alt="Nama 1" />
-      </div>
-      <h3 class="menu-name">Steven Andreas Salim.</h3>
-      <p class="menu-desc">H1H026050</p>
-    </article>
-
-    <article class="menu-item">
-      <div class="menu-item-img">
-        <span class="menu-badge">♡</span>
-        <img src="img/ambando.png" alt="Nama 2" />
-      </div>
-      <h3 class="menu-name">Rayhan Abigail F. Y.</h3>
-      <p class="menu-desc">H1H026064</p>
-    </article>
-
-    <article class="menu-item">
-      <div class="menu-item-img">
-        <span class="menu-badge">♡</span>
-        <img src="img/dev.png" alt="Nama 3" />
-      </div>
-      <h3 class="menu-name">Dev Muhamad Tizar.</h3>
-      <p class="menu-desc">H1H026039</p>
-    </article>
-
-    <article class="menu-item">
-      <div class="menu-item-img">
-        <span class="menu-badge">♡</span>
-        <img src="img/baruna.png" alt="Nama 4" />
-      </div>
-      <h3 class="menu-name">Muhammad Baruna S.</h3>
-      <p class="menu-desc">H1H026046</p>
-    </article>
-  </div>
-</section>
 
       <section class="content" id="visit">
         <div class="eyebrow">We are waiting for you</div>
@@ -166,5 +260,25 @@
     </main>
 
     <footer>KATTO MAID CAFE ♡ · MADE WITH LOVE</footer>
+    <script>
+      const tabs = document.querySelectorAll('.menu-tab');
+      const categoryGroups = document.querySelectorAll('.menu-category-group');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          tabs.forEach((t) => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          const selected = tab.getAttribute('data-tab');
+          categoryGroups.forEach((group) => {
+            if (selected === 'all' || group.getAttribute('data-category') === selected) {
+              group.style.display = 'block';
+            } else {
+              group.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
