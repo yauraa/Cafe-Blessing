@@ -567,6 +567,26 @@ section.content p {
 
 /* Contact Section-dev.tizar */
 
+/* Contact Section-baruna */
+.contact-link {
+  display: block;
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--brown);
+  text-decoration: underline;
+}
+
+.contact-link:hover { color: #d56e8e; }
+
+#visit .cards {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#visit .card p { line-height: 1.7; }
+
 /* ===================================================
    Footer Section
    =================================================== */
