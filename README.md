@@ -56,9 +56,9 @@ Tidak diperlukan instalasi tambahan karena website ini bersifat statis.
 
 | Anggota | Tugas / Kontribusi | Branch |
 |---------|--------------------|--------|
-| Steven Andreas Salim | Membuat section | `feature/navbar` `feature/hero` |
+| Steven Andreas Salim | Membuat section | `navbar` `hero` `footer`  |
 | Rayhan Abigail Fernando Yawalka | Membuat section | `feature/menu` |
-| Dev Muuhammad Tizar | _(isi tugas)_ | `feature/menu` |
+| Dev Muuhammad Tizar | _(isi tugas)_ | `menu` |
 | Muhammad Baruna Satria | _(isi tugas)_ | `feature/contact` |
 
 Seluruh pembagian pekerjaan dicatat melalui **GitHub Issues**, dan setiap perubahan diajukan melalui **Pull Request** yang direview oleh anggota lain sebelum di-merge ke branch `main`.
