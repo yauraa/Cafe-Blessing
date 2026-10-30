@@ -57,7 +57,7 @@ Tidak diperlukan instalasi tambahan karena website ini bersifat statis.
 | Anggota | Tugas / Kontribusi | Branch |
 |---------|--------------------|--------|
 | Steven Andreas Salim | Membuat section | `navbar` `hero` `footer`  |
-| Rayhan Abigail Fernando Yawalka | Membuat section | `feature/menu` |
+| Rayhan Abigail Fernando Yawalka | Membuat section | `menu` `docs/readme` |
 | Dev Muuhammad Tizar | _(isi tugas)_ | `menu` |
 | Muhammad Baruna Satria | _(isi tugas)_ | `feature/contact` |
 
