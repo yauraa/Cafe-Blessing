@@ -37,16 +37,36 @@ Selain itu, project ini menjadi latihan bagi kami untuk bekerja dalam tim menggu
 - HTML
 - CSS
 
-Cara Menjalankan Secara Lokal
-Clone repository ini:
-bash
+## Cara Menjalankan Secara Lokal
+
+1. Clone repository ini:
+   ```bash
    git clone https://github.com/yauraa/Cafe-KATTO.git
-Masuk ke folder project:
-bash
+   ```
+2. Masuk ke folder project:
+   ```bash
    cd Cafe-KATTO
-Buka file index.html langsung di browser (klik dua kali, atau klik kanan lalu Open with browser).
-Alternatif: jika memakai VS Code, install ekstensi Live Server, lalu klik kanan index.html dan pilih Open with Live Server.
+   ```
+3. Buka file `index.html` langsung di browser (klik dua kali, atau klik kanan lalu *Open with* browser).
+4. Alternatif: jika memakai VS Code, install ekstensi **Live Server**, lalu klik kanan `index.html` dan pilih **Open with Live Server**.
 
 Tidak diperlukan instalasi tambahan karena website ini bersifat statis.
 
+## Pembagian Tugas dan Kontribusi
 
+| Anggota | Tugas / Kontribusi | Branch |
+|---------|--------------------|--------|
+| Steven Andreas Salim | Membuat section | `section navbar` `section hero` |
+| Rayhan Abigail Fernando Yawalka | Membuat section | `feature/menu` |
+| Dev Muuhammad Tizar | _(isi tugas)_ | `feature/...` |
+| Muhammad Baruna Satria | _(isi tugas)_ | `feature/...` |
+
+Seluruh pembagian pekerjaan dicatat melalui **GitHub Issues**, dan setiap perubahan diajukan melalui **Pull Request** yang direview oleh anggota lain sebelum di-merge ke branch `main`.
+
+## Demo Online
+
+Website juga sudah di-deploy lewat GitHub Pages (opsional): https://yauraa.github.io/Cafe-KATTO/
+
+## Dokumentasi
+
+Screenshot halaman utama dan bagian penting website tersimpan di folder `screenshots/`.
