@@ -65,7 +65,7 @@ Seluruh pembagian pekerjaan dicatat melalui **GitHub Issues**, dan setiap peruba
 
 ## Demo Online
 
-Website juga sudah di-deploy lewat GitHub Pages (opsional): https://yauraa.github.io/Cafe-KATTO/
+Website juga sudah di-deploy lewat GitHub Pages: https://yauraa.github.io/Cafe-KATTO/
 
 ## Dokumentasi
 
