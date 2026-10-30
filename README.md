@@ -1,5 +1,6 @@
 Cafe KATTO
-Website statis untuk Cafe KATTO, sebuah maid cafe bertema Jepang. Website ini memperkenalkan cafe, suasananya, menu yang ditawarkan, serta informasi kontak untuk pengunjung.
+Website statis untuk Cafe KATTO, sebuah maid cafe bertema Jepang. 
+Website ini memperkenalkan cafe, suasananya, menu yang ditawarkan, serta informasi kontak untuk pengunjung.
 Project ini dibuat sebagai tugas akhir Weekly Meet Catalyst – Build Together: Collaborative Mini Project.
 
 Anggota Kelompok
